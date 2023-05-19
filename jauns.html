@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Gaidot dzimšanas dienu.. </h1>
+        <hr>
+    <form>
+        <p>Ievadi pilnu datumu, kad Tev būs tuvākā dzimšanas diena: </p>
+  <label for="fname">Gads:</label><br>
+  <input type="text" id="fname" name="Gads:"><br>
+  <label for="lname">Mēnesis:</label><br>
+  <input type="text" id="lname" name="menesis"><br>
+  <label for="mname">Diena:</label><br>
+  <input type="text" id="mname" name="datums"><br>
+  <p> Līdz svētkiem atlikušas </P>
+    <input type="text" id="mname" name="dienas`"><br>
+  <p> dienas : )) </p>
+  <input type="button" value="Aprēķināt dienu skaitu līdz dzimšanas dienai" onclick=”dienas();>
+  <script>  
+         var date1, date2;  
+         //define two date object variables with dates inside it  
+         date1 = new Date("07/15/2015");  
+         date2 = new Date("11/28/2016");  
+  
+         //calculate time difference  
+         var time_difference = date2.getTime() - date1.getTime();  
+  
+         //calculate days difference by dividing total milliseconds in a day  
+         var days_difference = time_difference / (1000 * 60 * 60 * 24);  
+           
+         document.write("Number of days between dates <br>" +   
+                         date1 + " and <br>" + date2 + " are: <br>"   
+                         + days_difference + " days");  
+      </script>    
+</form>
+
+
+
+    </body>
+</html>
